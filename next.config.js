@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', 
-    distDir: 'dist',
-    images :{
-        unoptimized : true
-    }  
+    basePath: '/nextjs-blog-deployment',
+    output: 'export',  
 }
 
 module.exports = nextConfig
