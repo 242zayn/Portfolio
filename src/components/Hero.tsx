@@ -15,9 +15,7 @@ const Hero = () => {
 
   const [text] = useTypewriter({
     words: [ 'MERN Developer', 'Full Stack Developer',   'Frontend Developer', 'Backend Developer',  'Web Developer', ],
-    loop: 0 ,
-    
-     
+    loop: 0, 
   })
   return (
     <motion.div className='    bg-white  dark:bg-black dark:text-slate-400 snap-center scroll-smooth  2xl:px-12 '
