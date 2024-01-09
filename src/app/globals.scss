@@ -1,0 +1,73 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+input[type="checkbox"]{
+    display:none;
+  }
+  label{
+    width: 100px;
+    height: 50px;
+    border:2px solid gray;
+    border-radius:30px;
+    padding:15px;
+    cursor:pointer;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.8);
+  }
+  
+  .sun{
+    color:orange ;
+    font-size:25px;
+    text-shadow:0px 0px 20px orange;
+    transform:translateX(0px);
+    transition:.3s;
+    position: relative;
+    right: -30px;
+  }
+  
+  .moon{
+    color:white !important;
+    font-size:25px;
+    text-shadow:0px 0px 20px white;
+    transform:translateX(0px);
+    opacity:0;
+    transition:.5s;
+  }
+  #switch-button:checked ~ label > .sun{
+    opacity:0;
+    transform:translateX(0px);
+  }
+  #switch-button:checked ~ label > .moon{
+    opacity:1;
+    transform:translateX(-2px);
+  }
+  #switch-button:checked ~ .content{
+    background:black;
+    transition: ease-in 0.2s;
+  }
+  #switch-button:checked ~ label{
+    box-shadow: 0px 0px 15px 5px whitesmoke;
+  }
+
+
+  .herodropshadow{
+    position: relative;
+  }
+  .herodropshadow::before {
+    content: "";
+    width: 50%;
+    height: 780px;
+    background: linear-gradient(205deg, rgba(5, 14, 29, 0.45) 28.43%, rgba(58, 123, 255, 0.45) 52.04%, rgba(17, 36, 73, 0.45) 110.85%);
+    position: absolute;
+    border-radius: 836.831px;
+    filter: blur(135px);
+    top: 27px;
+    left: 0;
+    right: 0;
+
+  }
